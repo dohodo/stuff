@@ -51,7 +51,7 @@ table {
 
 .spot {
     height: 500px;
-    margin: 100px auto;
+    margin: 100px auto 0 auto;
     width: 987px;
     position: relative;
 }
@@ -62,4 +62,19 @@ table {
     position: absolute;
     left: 0;
     top: 0;
+    opacity: 1;
+    -webkit-transition: all 1s ease-out;
+    -moz-transition: all 1s ease-out;
+    -o-transition: all 1s ease-out;
+    transition: all 1s ease-out;
+}
+
+.buttons {
+    margin: 0 auto;
+    text-align: center;
+
+}
+
+.buttons button {
+
 }

@@ -3,13 +3,31 @@
 <head>
 	<title>Florin Dinu's Portofolio</title>
 	<link rel="stylesheet prefetch" href="style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
 <body>
 	<div class="spot">
-		<img src="1.jpg" />
-		<img src="2.jpg" />
-		<img src="3.jpg" />
+		<img id="r" src="3.jpg" />
+		<img id="s" src="2.jpg" />
+		<img id="w" src="1.jpg" />
 	</div>
-
+	<div class="buttons">
+		<button id="wire">wireframe</button>
+		<button id="simple">simple</button>
+		<button id="render">rendered</button>
+	</div>
+	<script type="text/javascript">
+		$( "#wire" ).click(function() {
+			$("#w").css("opacity","1");
+		});
+		$( "#simple" ).click(function() {
+			$("#w").css("opacity","0");
+			$("#s").css("opacity","1");
+		});
+		$( "#render" ).click(function() {
+			$("#s, #w").css("opacity","0");
+			$("#r").css("opacity","1");
+		});
+	</script>
 </body>
 </html>
